@@ -8,6 +8,10 @@
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <style>
+        tr:hover {background-color: lightblue}
+    </style>
+
 </head>
 <body>
 
@@ -71,7 +75,8 @@ $iplist = array
     array("172.16.3.241", "OP1-N.S.O"),
     array("172.16.3.242", "DIRECTOR'S OFFICE"),
     array("172.16.3.243", "OP1-OR"),
-    array("172.16.3.244", "OP1-DR"),
+    // array("172.16.3.244", "OP1-DR"),
+    array("172.16.3.246", "OP1-DR"),
     array("172.16.3.245", "OP1-CWU"),
     // array("172.16.3.246", "OP1-CT-SCAN-(RE-CONFIGURE BY GE ENGINEER)"),
     array("172.16.3.247", "OP1-OB Ward"),
@@ -133,7 +138,7 @@ foreach($results as $item =>$k){
     } else {
         echo '<td style=color:red><strong><i class="fa-regular fa-circle-xmark fa-fade"></i></strong></td>';
     }
-    echo '</tr>';  
+    echo '</tr>'; 
 }
 
 echo "</table>";
