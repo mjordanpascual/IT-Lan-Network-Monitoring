@@ -9,7 +9,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        tr:hover {background-color: lightblue}
+        #tableTr:hover {background-color: #DFE4E2; font-weight: bold; transition: 0.3s;}
     </style>
 
 </head>
@@ -129,7 +129,7 @@ echo "<table border=1 style=border-collapse:collapse>
     <td align=center width=50>Stat</td>
 </tr>";
 foreach($results as $item =>$k){
-    echo '<tr align=center>';
+    echo '<tr align=center id="tableTr">';
     echo '<td>'.$item.'</td>';
     // echo '<td>'.$iplist[$item][0].'</td>';
     echo '<td align=left>'.$iplist[$item][1].'</td>';
@@ -140,7 +140,6 @@ foreach($results as $item =>$k){
     }
     echo '</tr>'; 
 }
-
 echo "</table>";
 echo '</font>';
 echo "</div>";
